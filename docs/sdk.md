@@ -6,9 +6,16 @@ sidebar_position: 2
 
 The SDK is a JS/TS module for developers, allowing anyone to retrieve NFT data in a few lines of codes.
 
-For example:
+All you need is to install the NFTez npm package:
+```sh
+npm install test-tezos
+# or
+yarn add test-tezos
+```
+
+Example:
 ```ts
-import sdk from "NFtez";
+import sdk from "test-tezos";
 
 sdk.getNFTCollection("<contract-address>")
 .then(console.log);
