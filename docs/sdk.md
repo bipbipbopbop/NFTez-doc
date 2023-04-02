@@ -14,7 +14,7 @@ sdk.getNFTCollection("<contract-address>")
 .then(console.log);
 ```
 
-This small script will print out basic information for each NFT of a collection.
+This small script will print out basic informations for each NFT of a collection.
 
 ---
 
@@ -31,12 +31,7 @@ getNFTCollection: (contractAddress: string) => Promise<GetNftCollectionQuery>
 
 `getWalletNFTs()`: Get all NFTs for a given wallet address.
 ```ts
-getWalletNFTs: (walletAddress: string) => Promise<GetNfTsQuery>
-```
-
-`verifyOwnership()`: Return `true` if the given wallet address hold any NFT of a given collection.
-```ts
-verifyOwnership: (walletAddress: string, contractAddress: string) => Promise<boolean>
+getWalletNFTs: (walletAddress: string) => Promise<GetWalletNfTsQuery>
 ```
 
 `getNFTMetadata()`: Get all metadata of a given collection address / token ID pair.
@@ -44,7 +39,12 @@ verifyOwnership: (walletAddress: string, contractAddress: string) => Promise<boo
 getNFTMetadata: (contractAddress: string, tokenId: string) => Promise<Record<string, any>>
 ```
 
+`verifyOwnership()`: Return `true` if the given wallet address hold any NFT of a given collection.
+```ts
+verifyOwnership: (walletAddress: string, contractAddress: string) => Promise<boolean>
+```
+
 `verifyTokenOwnership()`: Return `true` if the given wallet address hold the specified token in the given collection.
 ```ts
-verifyTokenOwnership: (tokenId: string, walletAddress: string, contractAddress: string) => Promise<VerifyTokenOwnershipQuery>
+verifyTokenOwnership: (tokenId: string, walletAddress: string, contractAddress: string) => Promise<boolean>
 ```
