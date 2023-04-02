@@ -65,11 +65,6 @@ const config = {
             position: 'left',
             label: 'Documentation',
           },
-          {
-            href: 'https://github.com/zkshop/NFTez',
-            label: 'GitHub',
-            position: 'right',
-          },
         ],
       },
       footer: {
@@ -88,8 +83,16 @@ const config = {
             title: 'More',
             items: [
               {
-                label: 'GitHub',
+                label: 'SDK GitHub',
                 href: 'https://github.com/zkshop/NFTez',
+              },
+              {
+                label: 'Landing Page GitHub',
+                href: 'https://github.com/mnaji42/NFTez-landing',
+              },
+              {
+                label: 'Documentation GitHub',
+                href: 'https://github.com/bipbipbopbop/NFTez-doc',
               },
             ],
           },
